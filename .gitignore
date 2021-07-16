@@ -3,3 +3,6 @@
 .env
 /build
 /out
+/dist
+
+.DS_Store
