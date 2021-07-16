@@ -4,8 +4,10 @@
   "description": "",
   "scripts": {
     "dev": "ts-node --project tsconfig.server.json server/index.ts",
-    "build": "next build",
-    "start": "next start"
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:next": "next build",
+    "build": "yarn build:next && yarn build:server",
+    "start": "NODE_ENV=production node dist/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -24,6 +26,7 @@
     "@typescript-eslint/parser": "^4.28.3",
     "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^11.0.1",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
