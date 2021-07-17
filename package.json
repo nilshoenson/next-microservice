@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "ts-node --project tsconfig.server.json server/index.ts",
-    "build:server": "tsc --project tsconfig.server.json",
-    "build:next": "next build",
-    "build": "yarn build:next && yarn build:server",
-    "start": "node dist/index.js"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "express": "^4.17.1",
