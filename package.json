@@ -7,7 +7,7 @@
     "build:server": "tsc --project tsconfig.server.json",
     "build:next": "next build",
     "build": "yarn build:next && yarn build:server",
-    "start": "NODE_ENV=production node dist/index.js"
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
